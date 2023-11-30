@@ -2,6 +2,7 @@ namespace: default
 resources:
   - nginx.yaml
   - backend.yaml
+  - frontenn.yaml
 configMapGenerator:
   - name: nginx
     files:
