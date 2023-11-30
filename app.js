@@ -14,7 +14,7 @@ const createApp = () => {
   app.use(express.json());
   app.use(router);
 
-  app.get("/ping", (req, res, next) => {
+  app.get("/api/ping", (req, res, next) => {
     res.status(200).json({ message: "pong" });
   });
 
