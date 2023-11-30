@@ -14,12 +14,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-app.get("/", (req, res) => {
-    res.send("dkdkdk")
-})
-
-app.get("/ping", (req, res) => {
-	res.status(200).send("pong");
+app.get("*", (req, res) => {
+    res.send({ req, test: "aaa" }).status(200);
 })
 
 // GPT API
