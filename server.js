@@ -14,7 +14,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-app.get("/", (req, res) => {
+app.get("/api/ping", (req, res) => {
 	console.log("ping");
     res.send({ test: "aaa" }).status(200);
 })
