@@ -4,7 +4,7 @@ const { appDataSource } = require('./api/models/dataSource');
 const startServer = async () => {
   const app = createApp();
 
-  const PORT = process.env.PORT || 3000;
+  const PORT = process.env.PORT || 3001;
 
   app.listen(PORT, async () => {
     await appDataSource
