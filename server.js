@@ -15,7 +15,7 @@ const startServer = async () => {
       .catch((error) => {
         console.error('Error during Data Source initialization', error);
       });
-    console.log(`Listening to request on 127.0.0.1:${PORT}`);
+    console.log(`Listening to request on 0.0.0.0:${PORT}`);
   });
 };
 
